@@ -32,6 +32,13 @@ def get_latest_tweet(username):
 
 def bot_loop():
     seen_tweets = {}
+def bot_loop():
+    seen_tweets = {}
+    bot.send_message(chat_id=CHAT_ID, text="👋 Hello from your deployed bot!")  # <--- add here
+    while True:
+        for user in USERNAMES:
+            ...
+
     while True:
         for user in USERNAMES:
             try:
