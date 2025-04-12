@@ -6,9 +6,9 @@ from threading import Thread
 import telegram
 
 # Environment variables from Render Dashboard
-TELEGRAM_TOKEN = os.environ['7687793489:AAHGjWI3QLXgLuzRDUHU5z5_mDbptoIBFJI']
-TWITTER_BEARER_TOKEN = os.environ['AAAAAAAAAAAAAAAAAAAAAJPMzgEAAAAAVt8OTm5vQkglpSJE7Uvmv2p9nxk%3DyBOQGAhbb5cqJmB30ocgyvBijvgVnHSwKgUaXsEUSCPwJDkNgf']
-CHAT_ID = os.environ['7687793489']
+TELEGRAM_TOKEN = os.environ['TELEGRAM_TOKEN']
+TWITTER_BEARER_TOKEN = os.environ['TWITTER_BEARER_TOKEN']
+CHAT_ID = os.environ['CHAT_ID']
 USERNAMES = ['DiveAi193973', '_Artrenarts_', 'Zun2025', 'mztacat' ]
 
 bot = telegram.Bot(token=TELEGRAM_TOKEN)
