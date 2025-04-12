@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: twitter-telegram-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "./start.sh"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
+      - key: TWITTER_BEARER_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
+    autoDeploy: true
